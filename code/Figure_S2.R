@@ -106,7 +106,7 @@ map_nonnat <- ggplot() +
   publication_theme +
   theme(legend.position = "bottom", axis.line = element_blank(),
     panel.border = element_rect(fill = NA, colour = "#AEB5B5", linewidth = .3))
-map_nonnat <- map_nonnat + labs(tag = "A", title = labels["nonnat"],
+map_nonnat <- map_nonnat + labs(tag = "a", title = labels["nonnat"],
   subtitle = paste0("n = ", area_summary$species_count[area_summary$invasion_label == "nonnat"]))
 
 inset_nonnat <- ggplot() +
@@ -179,7 +179,7 @@ map_nat <- ggplot() +
   publication_theme +
   theme(legend.position = "bottom", axis.line = element_blank(),
     panel.border = element_rect(fill = NA, colour = "#AEB5B5", linewidth = .3))
-map_nat <- map_nat + labs(tag = "B", title = labels["nat"],
+map_nat <- map_nat + labs(tag = "b", title = labels["nat"],
   subtitle = paste0("n = ", area_summary$species_count[area_summary$invasion_label == "nat"]))
 
 inset_nat <- ggplot() +
@@ -252,7 +252,7 @@ map_inv <- ggplot() +
   publication_theme +
   theme(legend.position = "bottom", axis.line = element_blank(),
     panel.border = element_rect(fill = NA, colour = "#AEB5B5", linewidth = .3))
-map_inv <- map_inv + labs(tag = "C", title = labels["inv"],
+map_inv <- map_inv + labs(tag = "c", title = labels["inv"],
   subtitle = paste0("n = ", area_summary$species_count[area_summary$invasion_label == "inv"]))
 
 inset_inv <- ggplot() +
@@ -299,7 +299,7 @@ mean_area <- ggplot(area_summary, aes(x = invasion_label,
   scale_fill_manual(values = bar_colors, guide = "none") +
   scale_x_discrete(labels = area_labels) +
   scale_y_continuous(limits = c(0, 2.06), breaks = seq(0, 2, .5), expand = c(0, 0)) +
-  labs(tag = "D", x = NULL,
+  labs(tag = "d", x = NULL,
        y = "Mean suitable area per taxon\n(10\u2076 km\u00B2)") +
   publication_theme +
   theme(axis.ticks.x = element_blank(),

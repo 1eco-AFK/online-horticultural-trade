@@ -158,7 +158,7 @@ p11 <- plot(dat_m6) +
   my_main_theme
 
 plot_mian <- wrap_plots(p6, p7, p8, p9, p10, p11, nrow = 3) +
-  plot_annotation(tag_levels = 'A')
+  plot_annotation(tag_levels = 'a')
 
 ggsave("results/Figure_2.png", plot_mian, device = ragg::agg_png,
        width = 8, height = 10, units = "in", dpi = 600, bg = "white")

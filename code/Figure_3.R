@@ -129,7 +129,7 @@ p4 <- plot(dat_prop_lat, line_size = 1) +
   my_theme
 
 plot_interaction <- wrap_plots(p1, p2, p3, p4, nrow = 2) +
-  plot_annotation(tag_levels = 'A')
+  plot_annotation(tag_levels = 'a')
 
 ggsave("results/Figure_3.png", plot_interaction, device = ragg::agg_png,
        width = 8, height = 8, units = "in", dpi = 600, bg = "white")
